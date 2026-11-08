@@ -1,0 +1,50 @@
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+.app-main { width: min(1240px, 100%); flex: 1; padding-top: 34px; padding-bottom: 48px; }
+.petcare-navbar { background: #183b63; padding: 13px 0; box-shadow: 0 3px 14px rgba(20, 45, 75, .12); }
+.petcare-navbar .navbar-brand { color: #fff; font-size: 1.35rem; font-weight: 800; letter-spacing: -.4px; }
+.brand-mark { display: inline-grid; place-items: center; background: rgba(255,255,255,.15); border-radius: 10px; width: 34px; height: 34px; margin-right: 6px; }
+.petcare-navbar .nav-link { color: rgba(255,255,255,.82); font-weight: 550; margin: 0 3px; }
+.petcare-navbar .nav-link:hover, .petcare-navbar .nav-link.active { color: #fff; }
+.petcare-navbar .dropdown-menu { border: 0; box-shadow: 0 8px 25px rgba(20,45,75,.15); }
+.nav-search { gap: 8px; }
+.nav-search .form-control { min-width: 170px; }
+.dashboard-welcome, .page-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 27px; }
+.dashboard-welcome h1, .page-heading h1 { color: #183153; font-size: clamp(1.7rem, 3vw, 2.25rem); font-weight: 800; letter-spacing: -.8px; margin: 4px 0 7px; }
+.dashboard-welcome p, .page-heading p { color: #718096; margin: 0; font-size: .98rem; }
+.eyebrow { color: #2674b8; font-size: .72rem; font-weight: 800; letter-spacing: 1.5px; }
+.add-button { background: #2476bd; border-color: #2476bd; border-radius: 9px; padding: 10px 16px; font-weight: 650; white-space: nowrap; }
+.add-button:hover { background: #185f9d; border-color: #185f9d; }
+.stat-card { border: 0; border-radius: 15px; box-shadow: 0 5px 22px rgba(26,53,82,.07); color: #27384d; transition: transform .18s ease, box-shadow .18s ease; }
+.stat-card:hover { transform: translateY(-3px); box-shadow: 0 9px 26px rgba(26,53,82,.12); }
+.stat-top { display: flex; justify-content: space-between; align-items: center; color: #66758a; font-weight: 650; }
+.stat-icon { display: grid; place-items: center; width: 47px; height: 47px; border-radius: 13px; background: #edf5ff; font-size: 1.35rem; }
+.stat-value { color: #183153; font-size: 2.2rem; line-height: 1.3; font-weight: 800; margin: 14px 0 4px; }
+.stat-card small { color: #2476bd; font-weight: 650; }
+.content-card, .table-panel { border: 0; border-radius: 15px; box-shadow: 0 5px 22px rgba(26,53,82,.07); background: white; }
+.content-card .card-body { padding: 22px; }
+.content-card h2 { font-size: 1.1rem; font-weight: 750; color: #233b57; margin: 0; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 17px; }
+.section-heading p, .muted-small { color: #8491a3; font-size: .85rem; margin: 4px 0 0; }
+.quick-actions { display: grid; gap: 5px; }
+.quick-actions a { display: flex; align-items: center; gap: 12px; padding: 12px 8px; color: #31445b; text-decoration: none; border-bottom: 1px solid #edf1f5; }
+.quick-actions a:last-child { border-bottom: 0; }
+.quick-actions a span { display: grid; flex: 1; }
+.quick-actions a strong { font-size: .9rem; }
+.quick-actions a small { color: #8793a3; font-size: .78rem; }
+.quick-actions a b { color: #2476bd; }
+.table-panel { overflow: hidden; }
+.table-panel-heading { display: flex; align-items: center; justify-content: space-between; padding: 19px 21px; border-bottom: 1px solid #edf1f5; }
+.table-panel-heading strong { display: block; color: #263c56; }
+.table-panel-heading small { display: block; color: #8793a3; margin-top: 3px; }
+.data-table { font-size: .9rem; }
+.data-table thead th { background: #f3f7fb; color: #60738b; font-size: .76rem; text-transform: uppercase; letter-spacing: .55px; white-space: nowrap; border-bottom: 0; padding: 13px 15px; }
+.data-table tbody td { color: #45566b; padding: 13px 15px; vertical-align: middle; }
+.id-cell { color: #2476bd !important; font-weight: 750; }
+.empty-cell { text-align: center; color: #8290a2 !important; padding: 35px !important; }
+.status-pill { display: inline-block; border-radius: 20px; padding: 4px 10px; background: #fff4df; color: #a46a10; font-size: .78rem; font-weight: 700; }
+.app-footer { text-align: center; color: #91a0b2; padding: 18px; font-size: .8rem; border-top: 1px solid #e9eef4; }
+@media (max-width: 767px) {
+    .dashboard-welcome, .page-heading { align-items: flex-start; flex-direction: column; }
+    .nav-search { padding: 10px 0; }
+    .nav-search .form-control { min-width: 0; }
+}
